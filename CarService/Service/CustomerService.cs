@@ -1,4 +1,6 @@
 ﻿using CarService.Models;
+using System;
+using System.ComponentModel.Design;
 using System.Linq.Expressions;
 using System.Net;
 using System.Text.Json.Nodes;
@@ -66,12 +68,16 @@ namespace CarService.Service
         }
 
 
-        public bool Delete(Customer customer)
+        public bool Delete(int id)
         {
             try
             {
-                
-               // JsonFileUtils.WriteDynamicJsonObject(jsonObj, fileName);
+                var jObject = JObject.Parse(json);
+                JArray experiencesArrary = (JArray)jObject["experiences"];
+
+                var companyToDeleted = Customer.FirstOrDefault(obj => obj["companyid"].Value<int>() == companyId);
+
+                experiencesArrary.Remove(companyToDeleted);
 
                 return true;
             }

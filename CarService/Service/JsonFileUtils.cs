@@ -1,6 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using CarService.Models;
+using System.Net.Http.Json;
 
 namespace CarService.Service
 {
@@ -62,6 +64,30 @@ namespace CarService.Service
             using var fileStream = File.Create(fileName);
             using var utf8JsonWriter = new Utf8JsonWriter(fileStream);
             jsonObj.WriteTo(utf8JsonWriter);
+        }
+
+        public void DeleteUser(Customer customer, String fileName)
+        {
+           
+
+            try
+            {
+                //var jsonString = JsonSerializer.Serialize(obj, _options);
+
+                // File.ReadAllBytes(fileName);
+
+
+                var result = JsonConvert.DeserializeObject<Customer>(customer);
+
+                var name = "Harry"; // replace with combobox
+                var surname = "Thomas"; // replace with combobox
+                result.Person.RemoveAll(i => i.Name == name && i.Surname == surname);
+
+            }
+            catch (Exception)
+            {
+                throw new ArgumentException("User has not deleted");
+            }
         }
 
     }
