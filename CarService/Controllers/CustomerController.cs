@@ -1,7 +1,8 @@
-﻿using CarService.Models;
-using CarService.Service;
+﻿using Service;
+
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json.Nodes;
+using EntityModel;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,9 +22,15 @@ namespace CarService.Controllers
 
         // GET: api/<CustomerController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public Customer Get()
         {
-            return new string[] { "value1", "value2" };
+            return _customerService.GetCustomer();
+        }
+
+        [HttpGet("GetAll")]
+        public List<Customer> GetAll()
+        {
+            return _customerService.GetCustomers();
         }
 
         // GET api/<CustomerController>/5
@@ -55,7 +62,7 @@ namespace CarService.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            _customerService.Delete(id);
+          //  _customerService.Delete(id);
         }
     }
 }

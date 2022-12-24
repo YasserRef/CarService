@@ -25,3 +25,8 @@ D:\CarService\CarService\CarService\obj\Debug\net6.0\refint\CarService.dll
 D:\CarService\CarService\CarService\obj\Debug\net6.0\CarService.pdb
 D:\CarService\CarService\CarService\obj\Debug\net6.0\CarService.genruntimeconfig.cache
 D:\CarService\CarService\CarService\obj\Debug\net6.0\ref\CarService.dll
+D:\CarService\CarService\CarService\bin\Debug\net6.0\Customer.json
+D:\CarService\CarService\CarService\bin\Debug\net6.0\EntityModel.dll
+D:\CarService\CarService\CarService\bin\Debug\net6.0\Service.dll
+D:\CarService\CarService\CarService\bin\Debug\net6.0\Service.pdb
+D:\CarService\CarService\CarService\bin\Debug\net6.0\EntityModel.pdb

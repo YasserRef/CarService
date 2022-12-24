@@ -1,0 +1,15 @@
+D:\CarService\CarService\Service\bin\Debug\net6.0\Service.deps.json
+D:\CarService\CarService\Service\bin\Debug\net6.0\Service.dll
+D:\CarService\CarService\Service\bin\Debug\net6.0\Service.pdb
+D:\CarService\CarService\Service\bin\Debug\net6.0\EntityModel.dll
+D:\CarService\CarService\Service\bin\Debug\net6.0\EntityModel.pdb
+D:\CarService\CarService\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+D:\CarService\CarService\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\CarService\CarService\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+D:\CarService\CarService\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+D:\CarService\CarService\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+D:\CarService\CarService\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+D:\CarService\CarService\Service\obj\Debug\net6.0\Service.dll
+D:\CarService\CarService\Service\obj\Debug\net6.0\refint\Service.dll
+D:\CarService\CarService\Service\obj\Debug\net6.0\Service.pdb
+D:\CarService\CarService\Service\obj\Debug\net6.0\ref\Service.dll

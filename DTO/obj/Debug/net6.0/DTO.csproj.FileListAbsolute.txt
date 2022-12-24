@@ -1,0 +1,15 @@
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTO.exe
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTO.deps.json
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTO.runtimeconfig.json
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTO.dll
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTO.pdb
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.dll
+D:\CarService\CarService\DTO\obj\Debug\net6.0\refint\DTO.dll
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.pdb
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache
+D:\CarService\CarService\DTO\obj\Debug\net6.0\ref\DTO.dll

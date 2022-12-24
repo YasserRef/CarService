@@ -66,29 +66,29 @@ namespace CarService.Service
             jsonObj.WriteTo(utf8JsonWriter);
         }
 
-        public void DeleteUser(Customer customer, String fileName)
-        {
+        //public void DeleteUser(Customer customer, String fileName)
+        //{
            
 
-            try
-            {
-                //var jsonString = JsonSerializer.Serialize(obj, _options);
+        //    try
+        //    {
+        //        //var jsonString = JsonSerializer.Serialize(obj, _options);
 
-                // File.ReadAllBytes(fileName);
+        //        // File.ReadAllBytes(fileName);
 
 
-                var result = JsonConvert.DeserializeObject<Customer>(customer);
+        //        var result = JsonConvert.DeserializeObject<Customer>(customer);
 
-                var name = "Harry"; // replace with combobox
-                var surname = "Thomas"; // replace with combobox
-                result.Person.RemoveAll(i => i.Name == name && i.Surname == surname);
+        //        var name = "Harry"; // replace with combobox
+        //        var surname = "Thomas"; // replace with combobox
+        //        result.Person.RemoveAll(i => i.Name == name && i.Surname == surname);
 
-            }
-            catch (Exception)
-            {
-                throw new ArgumentException("User has not deleted");
-            }
-        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw new ArgumentException("User has not deleted");
+        //    }
+        //}
 
     }
 

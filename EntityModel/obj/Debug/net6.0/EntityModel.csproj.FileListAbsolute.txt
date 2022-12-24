@@ -1,0 +1,12 @@
+D:\CarService\CarService\EntityModel\bin\Debug\net6.0\EntityModel.deps.json
+D:\CarService\CarService\EntityModel\bin\Debug\net6.0\EntityModel.dll
+D:\CarService\CarService\EntityModel\bin\Debug\net6.0\EntityModel.pdb
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\EntityModel.csproj.AssemblyReference.cache
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\EntityModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\EntityModel.AssemblyInfoInputs.cache
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\EntityModel.AssemblyInfo.cs
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\EntityModel.csproj.CoreCompileInputs.cache
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\EntityModel.dll
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\refint\EntityModel.dll
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\EntityModel.pdb
+D:\CarService\CarService\EntityModel\obj\Debug\net6.0\ref\EntityModel.dll
