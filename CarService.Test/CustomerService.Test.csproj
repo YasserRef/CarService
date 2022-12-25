@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JsonFlatFileDataStore\JsonFlatFileDataStore.csproj" />
     <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
 

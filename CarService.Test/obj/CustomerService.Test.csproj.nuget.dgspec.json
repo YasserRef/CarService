@@ -33,9 +33,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj": {
-                "projectPath": "D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj"
-              },
               "D:\\CarService\\CarService\\Service\\Service.csproj": {
                 "projectPath": "D:\\CarService\\CarService\\Service\\Service.csproj"
               }

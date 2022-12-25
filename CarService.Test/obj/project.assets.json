@@ -5938,7 +5938,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj",
       "Microsoft.NET.Test.Sdk >= 17.2.0",
       "NSubstitute >= 4.4.0",
       "Service >= 1.0.0",
@@ -5979,9 +5978,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj": {
-              "projectPath": "D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj"
-            },
             "D:\\CarService\\CarService\\Service\\Service.csproj": {
               "projectPath": "D:\\CarService\\CarService\\Service\\Service.csproj"
             }
@@ -6036,16 +6032,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

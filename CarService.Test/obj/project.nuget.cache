@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "LpSX40VC+DpLsO4BY5X106Z0jvCQ8Y0Kg0JpZPRIVXG746VEkskEtwMqSYCPOWmqhPwMxnd4ss08miOAuaCaJg==",
-  "success": false,
+  "dgSpecHash": "nBIMb0eACZ7jQP0YACFCT+8mXSfJsl11NFYC6Wmr67LyanIRflIr4huYMREtRD8Xa+tlR1a14mQs8Ji/kva9xg==",
+  "success": true,
   "projectFilePath": "D:\\CarService\\CarService\\CarService.Test\\CustomerService.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Optimum\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
@@ -96,15 +96,5 @@
     "C:\\Users\\Optimum\\.nuget\\packages\\xunit.extensibility.execution\\2.4.1\\xunit.extensibility.execution.2.4.1.nupkg.sha512",
     "C:\\Users\\Optimum\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\CarService\\CarService\\JsonFlatFileDataStore\\JsonFlatFileDataStore.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
