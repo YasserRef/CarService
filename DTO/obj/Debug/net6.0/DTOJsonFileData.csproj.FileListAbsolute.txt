@@ -1,0 +1,17 @@
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTOJsonFileData.exe
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTOJsonFileData.deps.json
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTOJsonFileData.runtimeconfig.json
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTOJsonFileData.dll
+D:\CarService\CarService\DTO\bin\Debug\net6.0\DTOJsonFileData.pdb
+D:\CarService\CarService\DTO\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.csproj.AssemblyReference.cache
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.GeneratedMSBuildEditorConfig.editorconfig
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.AssemblyInfoInputs.cache
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.AssemblyInfo.cs
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.csproj.CoreCompileInputs.cache
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.csproj.CopyComplete
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.dll
+D:\CarService\CarService\DTO\obj\Debug\net6.0\refint\DTOJsonFileData.dll
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.pdb
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTOJsonFileData.genruntimeconfig.cache
+D:\CarService\CarService\DTO\obj\Debug\net6.0\ref\DTOJsonFileData.dll

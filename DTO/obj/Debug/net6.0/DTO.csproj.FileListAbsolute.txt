@@ -13,3 +13,5 @@ D:\CarService\CarService\DTO\obj\Debug\net6.0\refint\DTO.dll
 D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.pdb
 D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache
 D:\CarService\CarService\DTO\obj\Debug\net6.0\ref\DTO.dll
+D:\CarService\CarService\DTO\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\CarService\CarService\DTO\obj\Debug\net6.0\DTO.csproj.CopyComplete

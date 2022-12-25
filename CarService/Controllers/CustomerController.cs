@@ -1,10 +1,8 @@
 ﻿using Service;
-
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json.Nodes;
 using EntityModel;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace CarService.Controllers
 {
@@ -14,7 +12,7 @@ namespace CarService.Controllers
     {
         private readonly CustomerService _customerService;
 
-
+        
         public CustomerController(CustomerService customerService)
         {
             _customerService = customerService;
@@ -22,29 +20,22 @@ namespace CarService.Controllers
 
         // GET: api/<CustomerController>
         [HttpGet]
-        public Customer Get()
+        public Customer Find(string cusomerName)
         {
-            return _customerService.GetCustomer();
+            return _customerService.Find_With_Text(cusomerName);
         }
 
-        [HttpGet("GetAll")]
-        public List<Customer> GetAll()
+        [HttpGet("GetById")]
+        public dynamic Get(int id)
         {
-            return _customerService.GetCustomers();
-        }
-
-        // GET api/<CustomerController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+            return _customerService.AsQueryable_Single(id);
+        }       
 
         // POST api/<CustomerController>
         [HttpPost]
         public void Post([FromBody] Customer customer)
         {
-            _customerService.Add(customer);
+            _ = _customerService.InsertOneAsync(customer);
 
         }
 
@@ -55,14 +46,14 @@ namespace CarService.Controllers
             if (id != customer.Id)
                 return;
 
-            _customerService.Edit(customer);
+            _customerService.UpdateOne(customer);
         }
 
         // DELETE api/<CustomerController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-          //  _customerService.Delete(id);
+            _ = _customerService.DeleteOneAsync_With_Id(id);
         }
     }
 }

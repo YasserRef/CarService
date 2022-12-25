@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityModel", "EntityModel\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{C358F5EE-7F6A-47BB-8AA3-12D0F2EEA0CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{7B507727-743A-41F5-9CA3-DFE36CF48ADD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOJsonFileData", "DTO\DTOJsonFileData.csproj", "{7B507727-743A-41F5-9CA3-DFE36CF48ADD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerService.Test", "CarService.Test\CustomerService.Test.csproj", "{FC3B7F5B-3A1A-4B13-BCFF-E2899767C798}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7B507727-743A-41F5-9CA3-DFE36CF48ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B507727-743A-41F5-9CA3-DFE36CF48ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B507727-743A-41F5-9CA3-DFE36CF48ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3B7F5B-3A1A-4B13-BCFF-E2899767C798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3B7F5B-3A1A-4B13-BCFF-E2899767C798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3B7F5B-3A1A-4B13-BCFF-E2899767C798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3B7F5B-3A1A-4B13-BCFF-E2899767C798}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

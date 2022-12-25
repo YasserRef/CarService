@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "S4AZvERoC/DYisQYJnZ6jEtcfj+IWaMx4n2BXUjTlOFhLYhWA2uPDdBYrEmlXAai8/NYqD5TNuwSkcI+8QQAPw==",
+  "dgSpecHash": "O3bjKI5j1+nOG+blRFKKJgj3+LGSL6BJDAWk9CblEmlq4QYTeZTVlDtZyBqN9OSVUEqD6OCNENjvslNuVXB8sg==",
   "success": true,
-  "projectFilePath": "D:\\CarService\\CarService\\DTO\\DTO.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\CarService\\CarService\\DTO\\DTOJsonFileData.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Optimum\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,7 +1,12 @@
+D:\CarService\CarService\Service\bin\Debug\net6.0\DTOJsonFileData.deps.json
+D:\CarService\CarService\Service\bin\Debug\net6.0\DTOJsonFileData.runtimeconfig.json
+D:\CarService\CarService\Service\bin\Debug\net6.0\DTOJsonFileData.exe
 D:\CarService\CarService\Service\bin\Debug\net6.0\Service.deps.json
 D:\CarService\CarService\Service\bin\Debug\net6.0\Service.dll
 D:\CarService\CarService\Service\bin\Debug\net6.0\Service.pdb
+D:\CarService\CarService\Service\bin\Debug\net6.0\DTOJsonFileData.dll
 D:\CarService\CarService\Service\bin\Debug\net6.0\EntityModel.dll
+D:\CarService\CarService\Service\bin\Debug\net6.0\DTOJsonFileData.pdb
 D:\CarService\CarService\Service\bin\Debug\net6.0\EntityModel.pdb
 D:\CarService\CarService\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
 D:\CarService\CarService\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig

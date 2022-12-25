@@ -1,23 +1,20 @@
-﻿namespace EntityModel
-{
-    // Customer.cs
-    public record class Customer(
-        int Id,
-        string Name,
-        string Address,
-        List<CustomerInvoice>? CustomerInvoices = null);
+﻿using System;
+using System.Collections.Generic;
 
-    public record class CustomerInvoice(
-        
-        int Id,
-        string Name,
-        bool InProbation,
-        List<CustomerPerService>? CustomerPerServices = null);
+namespace EntityModel
+{  
 
-    public record class CustomerPerService(
-         int Id,
-        string Name,       
-        bool IsOptional);
+    public class Customer
+    {
+        public int Id { get; set; }
 
+        public string Name { get; set; }
 
+        public int Age { get; set; }
+        public string Location { get; set; }
+        public string Phone { get; set; }
+        public List<Invoice> Invoices { get; set; }
+    }
+
+    
 }

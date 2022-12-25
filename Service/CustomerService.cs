@@ -1,121 +1,161 @@
 ﻿using EntityModel;
-using System;
-using System.ComponentModel.Design;
-using System.Linq.Expressions;
-using System.Net;
-using System.Text.Json;
-using System.Text.Json.Nodes;
+using JsonFileData;
+using Service;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Service
 {
-
+    
     public class CustomerService
     {
-        public static string fileName = "Customer.json";
-        public IEnumerable<Customer> GetCustomers(int noOfCustomers, int invPerCustomer, int servicesPerInvoice)
+        private string _newFilePath;
+        private IDataStore _service;
+        private IDocumentCollection<dynamic> _collection;
+
+       
+        public CustomerService()
         {
-
-            for (var i = 0; i < noOfCustomers; i++)
-            {
-                yield return new(1, $"Customer{i}", $"Address{i}", GetInvoices());
-            }
-
-            List<CustomerInvoice>? GetInvoices()
-                => Enumerable.Repeat<CustomerInvoice>(new(8, $"Invoice2022", false, GetInvServices()), invPerCustomer).ToList();
-
-            List<CustomerPerService>? GetInvServices()
-                => Enumerable.Repeat<CustomerPerService>(new(4, $"Oil_10K", false), servicesPerInvoice).ToList();
+            _newFilePath = UTHelpers.Up();
+            _service = new DataStore(_newFilePath);
+            _collection = _service.GetCollection("Customer");
         }
 
-        public Customer GetCustomer()
+       
+       //  public void GlobalCleanup() => UTHelpers.Down(_newFilePath);       
+
+        public dynamic AsQueryable_Single(int id)
         {
-
-            using (StreamReader r = new StreamReader(fileName))
-            {
-                string json = r.ReadToEnd();
-                var result = JsonSerializer.Deserialize<Customer>(json);
-                return result;
-            }
-
+            var item = _collection.AsQueryable().Single(e => e.id == id);
+            return item;
         }
 
-        public List<Customer> GetCustomers()
+       
+        public async Task InsertOneAsync(Customer customer)
         {
-
-            using (StreamReader r = new StreamReader(fileName))
-            {
-                string json = r.ReadToEnd();
-                var result = JsonSerializer.Deserialize<List<Customer>>(json);
-                return result;
-            }
-
+            await _collection.InsertOneAsync(new { name = customer.Name });
         }
 
-        public bool Add(Customer customer)
+       
+        public void InsertOne(Customer customer)
         {
-            try
-            {
-                var jsonObj = new JsonObject
-                {
-                    ["Id"] = customer.Id,
-                    ["Name"] = customer.Name,
-                    ["Address"] = customer.Address,
-                };
-                JsonFileUtils.WriteDynamicJsonObject(jsonObj, fileName);
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            _collection.InsertOne(new { name = customer.Name });
         }
 
-
-        public bool Edit(Customer customer)
+      
+        public async Task InsertManyAsync()
         {
-            try
-            {
-                var jsonObj = new JsonObject
-                {
-                    ["Id"] = customer.Id,
-                    ["Name"] = customer.Name,
-                    ["Address"] = customer.Address,
-                };
-                JsonFileUtils.WriteDynamicJsonObject(jsonObj, fileName);
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            var items = Enumerable.Range(0, 100).Select(e => new { id = e, name = $"Teddy_{e}" });
+            await _collection.InsertManyAsync(items);
         }
 
+       
+        public void InsertMany()
+        {
+            var items = Enumerable.Range(0, 100).Select(e => new { id = e, name = $"Teddy_{e}" });
+            _collection.InsertMany(items);
+        }
 
-        //public bool Delete(int id)
-        //{
-        //    try
-        //    {
-        //        var jObject = JObject.Parse(json);
-        //        JArray experiencesArrary = (JArray)jObject["experiences"];
+       
+        public async Task DeleteOneAsync_With_Id(int id)
+        {
+            await _collection.DeleteOneAsync(id);
+        }
 
-        //        var companyToDeleted = Customer.FirstOrDefault(obj => obj["companyid"].Value<int>() == companyId);
+       
+        public async Task DeleteOneAsync_With_Predicate()
+        {
+            await _collection.DeleteOneAsync(e => e.id == 1);
+        }
 
-        //        experiencesArrary.Remove(companyToDeleted);
+       
+        public void DeleteMany()
+        {
+            _collection.DeleteMany(e => true);
+        }
 
-        //        return true;
-        //    }
-        //    catch ( Exception ex)
-        //    {
-        //        return false;
-        //    }
+       
+        public async Task DeleteManyAsync()
+        {
+            await _collection.DeleteManyAsync(e => true);
+        }
 
-        //}
+        public void ReplaceOne_With_Predicate()
+        {
+            _collection.ReplaceOne(e => e.id == 1, new { id = 1, name = "Teddy" });
+        }
 
+       
+        public void ReplaceOne_With_Id()
+        {
+            _collection.ReplaceOne(1, new { id = 1, name = "Teddy" });
+        }
+
+       
+        public async Task ReplaceOneAsync_With_Predicate()
+        {
+            await _collection.ReplaceOneAsync(e => e.id == 1, new { id = 1, name = "Teddy" });
+        }
+
+        
+        public async Task ReplaceOneAsync_With_Id()
+        {
+            await _collection.ReplaceOneAsync(1, new { id = 1, name = "Teddy" });
+        }
+
+       
+        public void ReplaceMany(Customer customer)
+        {
+            _collection.ReplaceMany(e => true, new { id = customer.Id, name = customer.Name });
+        }
+
+       
+        public async Task ReplaceManyAsync()
+        {
+            await _collection.ReplaceManyAsync(e => true, new { id = 1, name = "Teddy" });
+        }
+
+       
+        public void UpdateOne(Customer customer)
+        {
+            _collection.UpdateOne(e => e.id == customer.Id, new { name = customer.Name });
+        }
+
+       
+        public async Task UpdateOneAsync()
+        {
+            await _collection.UpdateOneAsync(e => e.id == 1, new { name = "Teddy" });
+        }
+
+       
+        public void UpdateMany()
+        {
+            _collection.UpdateMany(e => true, new { name = "Teddy" });
+        }
+
+       
+        public async Task UpdateManyAsync()
+        {
+            await _collection.UpdateManyAsync(e => true, new { name = "Teddy" });
+        }
+
+       
+        public void Find_With_Predicate()
+        {
+            _collection.Find(e => e.id == 1);
+        }
+
+       
+        public dynamic Find_With_Text(String cusomerName)
+        {
+         var item =  _collection.Find(cusomerName);
+            return item;
+        }
+
+       
+        public void GetNextIdValue()
+        {
+            _collection.GetNextIdValue();
+        }
     }
-
-
-
-
 }
